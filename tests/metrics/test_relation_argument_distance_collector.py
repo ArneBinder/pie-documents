@@ -3,9 +3,9 @@ import dataclasses
 import pytest
 from pie_core import Annotation, AnnotationLayer, Document, annotation_field
 
-from pie_modules.annotations import BinaryRelation, LabeledSpan, NaryRelation
-from pie_modules.documents import TextBasedDocument, TokenBasedDocument
-from pie_modules.metrics import RelationArgumentDistanceCollector
+from pie_documents.annotations import BinaryRelation, LabeledSpan, NaryRelation
+from pie_documents.documents import TextBasedDocument, TokenBasedDocument
+from pie_documents.metrics import RelationArgumentDistanceCollector
 
 
 @dataclasses.dataclass

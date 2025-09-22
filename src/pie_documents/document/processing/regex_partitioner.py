@@ -8,8 +8,8 @@ from typing import Any, Callable, Iterable, Iterator, Match, TypeVar
 
 from pie_core import EnterDatasetMixin, ExitDatasetMixin
 
-from pie_modules.annotations import LabeledSpan
-from pie_modules.documents import TextBasedDocument
+from pie_documents.annotations import LabeledSpan
+from pie_documents.documents import TextBasedDocument
 
 logger = logging.getLogger(__name__)
 

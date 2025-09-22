@@ -1,10 +1,10 @@
-from pie_modules.annotations import (
+from pie_documents.annotations import (
     BinaryRelation,
     ExtractiveAnswer,
     LabeledSpan,
     Question,
 )
-from pie_modules.documents import (
+from pie_documents.documents import (
     TextDocumentWithQuestionsAndExtractiveAnswers,
     TokenDocumentWithLabeledPartitions,
     TokenDocumentWithLabeledSpans,

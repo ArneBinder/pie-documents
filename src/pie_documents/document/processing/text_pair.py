@@ -8,14 +8,14 @@ from typing import Dict, Iterable, List, Optional, Tuple, TypeVar
 
 from tqdm import tqdm
 
-from pie_modules.annotations import LabeledSpan, Span
-from pie_modules.documents import (
+from pie_documents.annotations import LabeledSpan, Span
+from pie_documents.documents import (
     BinaryCorefRelation,
     TextDocumentWithLabeledSpansAndBinaryRelations,
     TextDocumentWithLabeledSpansBinaryRelationsAndLabeledPartitions,
     TextPairDocumentWithLabeledSpansAndBinaryCorefRelations,
 )
-from pie_modules.utils.span import are_nested
+from pie_documents.utils.span import are_nested
 
 logger = logging.getLogger(__name__)
 

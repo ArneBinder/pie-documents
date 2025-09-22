@@ -5,19 +5,19 @@ from typing import Dict
 import pytest
 from pie_core import Annotation, AnnotationLayer, Document, annotation_field
 
-from pie_modules.annotations import (
+from pie_documents.annotations import (
     BinaryRelation,
     Label,
     LabeledMultiSpan,
     LabeledSpan,
     Span,
 )
-from pie_modules.document.processing import (
+from pie_documents.document.processing import (
     text_based_document_to_token_based,
     token_based_document_to_text_based,
 )
-from pie_modules.document.processing.tokenization import find_token_offset_mapping
-from pie_modules.documents import TextBasedDocument, TokenBasedDocument
+from pie_documents.document.processing.tokenization import find_token_offset_mapping
+from pie_documents.documents import TextBasedDocument, TokenBasedDocument
 from tests.conftest import TestDocument
 
 
@@ -552,7 +552,7 @@ def test_text_based_document_to_token_based_wrong_annotation_type():
     assert (
         str(excinfo.value)
         == "can not convert layers that target the text but contain non-span annotations, "
-        "but found <class 'pie_modules.annotations.Label'>"
+        "but found <class 'pie_documents.annotations.Label'>"
     )
 
 
@@ -643,5 +643,5 @@ def test_token_based_document_to_text_based_wrong_annotation_type():
     assert (
         str(excinfo.value)
         == "can not convert layers that target the tokens but contain non-span annotations, "
-        "but found <class 'pie_modules.annotations.Label'>"
+        "but found <class 'pie_documents.annotations.Label'>"
     )

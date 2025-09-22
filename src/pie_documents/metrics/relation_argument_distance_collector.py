@@ -3,8 +3,8 @@ from typing import Dict, List
 
 from pie_core import Document, DocumentStatistic
 
-from pie_modules.annotations import BinaryRelation, NaryRelation, Span
-from pie_modules.utils.span import distance
+from pie_documents.annotations import BinaryRelation, NaryRelation, Span
+from pie_documents.utils.span import distance
 
 
 class RelationArgumentDistanceCollector(DocumentStatistic):

@@ -1,6 +1,6 @@
 import pytest
 
-from pie_modules.utils.span import (
+from pie_documents.utils.span import (
     are_nested,
     distance,
     distance_center,

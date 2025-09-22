@@ -4,7 +4,7 @@ from typing import Generic, TypeVar, get_args
 
 from pie_core import Annotation, Document
 
-from pie_modules.annotations import MultiSpan, Span
+from pie_documents.annotations import MultiSpan, Span
 
 ST = TypeVar("ST", bound=Span)
 

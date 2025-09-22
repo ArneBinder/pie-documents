@@ -3,9 +3,9 @@ import dataclasses
 import pytest
 from pie_core import AnnotationLayer, annotation_field
 
-from pie_modules.annotations import BinaryRelation, LabeledMultiSpan, LabeledSpan
-from pie_modules.document.processing import TextSpanTrimmer
-from pie_modules.documents import TextBasedDocument
+from pie_documents.annotations import BinaryRelation, LabeledMultiSpan, LabeledSpan
+from pie_documents.document.processing import TextSpanTrimmer
+from pie_documents.documents import TextBasedDocument
 
 
 @dataclasses.dataclass

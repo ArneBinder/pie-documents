@@ -3,13 +3,13 @@ from typing import List
 
 import pytest
 
-from pie_modules.annotations import BinaryRelation, LabeledSpan
-from pie_modules.document.processing.text_pair import (
+from pie_documents.annotations import BinaryRelation, LabeledSpan
+from pie_documents.document.processing.text_pair import (
     add_negative_coref_relations,
     construct_text_document_from_text_pair_coref_document,
     construct_text_pair_coref_documents_from_partitions_via_relations,
 )
-from pie_modules.documents import (
+from pie_documents.documents import (
     BinaryCorefRelation,
     TextDocumentWithLabeledSpansBinaryRelationsAndLabeledPartitions,
     TextPairDocumentWithLabeledSpansAndBinaryCorefRelations,

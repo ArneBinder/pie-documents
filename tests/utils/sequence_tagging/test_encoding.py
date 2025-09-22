@@ -1,10 +1,10 @@
 import pytest
 
-from pie_modules.utils.sequence_tagging import (
+from pie_documents.utils.sequence_tagging import (
     tag_sequence_to_token_spans,
     token_spans_to_tag_sequence,
 )
-from pie_modules.utils.sequence_tagging.encoding import (
+from pie_documents.utils.sequence_tagging.encoding import (
     _bioul_to_boul,
     _boul_to_bioul,
     labeled_spans_to_iob2,

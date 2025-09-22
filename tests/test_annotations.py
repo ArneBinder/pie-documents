@@ -6,7 +6,7 @@ from typing import Dict, Optional
 import pytest
 from pie_core import Annotation, AnnotationLayer, annotation_field
 
-from pie_modules.annotations import (
+from pie_documents.annotations import (
     BinaryRelation,
     Label,
     LabeledMultiSpan,
@@ -17,7 +17,7 @@ from pie_modules.annotations import (
     NaryRelation,
     Span,
 )
-from pie_modules.documents import TextBasedDocument
+from pie_documents.documents import TextBasedDocument
 
 
 def _test_annotation_reconstruction(
