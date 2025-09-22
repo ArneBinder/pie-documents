@@ -1,10 +1,10 @@
-# pie-modules
+# pie-documents
 
 <a href="https://github.com/ArneBinder/pie-core"><img alt="PythonIE" src="https://img.shields.io/badge/-PythonIE-017F2F?style=flat&logo=github&labelColor=gray"></a><br>
 
-[![PyPI](https://img.shields.io/pypi/v/pie-modules.svg)][pypi status]
-[![Tests](https://github.com/arnebinder/pie-modules/workflows/Tests/badge.svg)][tests]
-[![Codecov](https://codecov.io/gh/arnebinder/pie-modules/branch/main/graph/badge.svg)][codecov]
+[![PyPI](https://img.shields.io/pypi/v/pie-documents.svg)][pypi status]
+[![Tests](https://github.com/arnebinder/pie-documents/workflows/Tests/badge.svg)][tests]
+[![Codecov](https://codecov.io/gh/arnebinder/pie-documents/branch/main/graph/badge.svg)][codecov]
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)][pre-commit]
 [![Black](https://img.shields.io/badge/code%20style-black-000000.svg)][black]
 
@@ -36,13 +36,13 @@ Document processing utilities:
 ## Setup
 
 ```bash
-pip install pie-modules
+pip install pie-documents
 ```
 
 To install the latest version from GitHub:
 
 ```bash
-pip install git+https://git@github.com/ArneBinder/pie-modules.git
+pip install git+https://git@github.com/ArneBinder/pie-documents.git
 ```
 
 ## Development
@@ -52,8 +52,8 @@ pip install git+https://git@github.com/ArneBinder/pie-modules.git
 1. This project is build with [Poetry](https://python-poetry.org/). See here for [installation instructions](https://python-poetry.org/docs/#installation).
 2. Get the code and switch into the project directory:
    ```bash
-   git clone https://github.com/ArneBinder/pie-modules
-   cd pie-modules
+   git clone https://github.com/ArneBinder/pie-documents
+   cd pie-documents
    ```
 3. Create a virtual environment and install the dependencies (including development dependencies):
    ```bash
@@ -103,7 +103,7 @@ pytest --cov --cov-report term-missing
 8. Cleanup: Delete the `release` branch. This is important, because otherwise the next release will fail.
 
 [black]: https://github.com/psf/black
-[codecov]: https://app.codecov.io/gh/arnebinder/pie-modules
+[codecov]: https://app.codecov.io/gh/arnebinder/pie-documents
 [pre-commit]: https://github.com/pre-commit/pre-commit
-[pypi status]: https://pypi.org/project/pie-modules/
-[tests]: https://github.com/arnebinder/pie-modules/actions?workflow=Tests
+[pypi status]: https://pypi.org/project/pie-documents/
+[tests]: https://github.com/arnebinder/pie-documents/actions?workflow=Tests
