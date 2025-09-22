@@ -4,7 +4,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "pie-modules"
-version = "0.15.9"
+version = "0.15.12"
 description = "Utility modules for Python-IE"
 authors = ["Arne Binder <arne.binder@dfki.de>"]
 readme = "README.md"
@@ -24,7 +24,7 @@ classifiers = [
 
 [tool.poetry.dependencies]
 python = "^3.9"
-pie-core = ">=0.2.0,<0.3.0"
+pie-core = ">=0.2.0,<0.4.0"
 # for show_as_markdown in metrics
 pandas = ">=2.0.3,<3.0.0"
 
@@ -34,7 +34,7 @@ pytest-cov = "^4.1.0"
 pre-commit = "^3.4.0"
 tabulate = "^0.9"
 # for rouge metric (tests only) and for NltkSentenceSplitter
-nltk = "^3.8.1"
+nltk = "^3.9.1"
 # for NltkSentenceSplitter
 flair = "^0.13.1"
 # for SpansViaRelationMerger
