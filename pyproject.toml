@@ -3,13 +3,13 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
-name = "pie-modules"
-version = "0.15.12"
-description = "Utility modules for Python-IE"
+name = "pie-documents"
+version = "0.0.1"
+description = "Python-IE document and annotation types as well as document processing utilities"
 authors = ["Arne Binder <arne.binder@dfki.de>"]
 readme = "README.md"
-homepage = "https://github.com/arnebinder/pie-modules"
-repository = "https://github.com/arnebinder/pie-modules"
+homepage = "https://github.com/arnebinder/pie-documents"
+repository = "https://github.com/arnebinder/pie-documents"
 packages = [
     { include = "pie_modules", from = "src" },
 ]
@@ -19,8 +19,8 @@ classifiers = [
     "Programming Language :: Python :: 3 :: Only",
 ]
 [tool.poetry.urls]
-"Bug Tracker" = "https://github.com/arnebinder/pie-modules/issues"
-"Changelog" = "https://github.com/arnebinder/pie-modules/releases"
+"Bug Tracker" = "https://github.com/arnebinder/pie-documents/issues"
+"Changelog" = "https://github.com/arnebinder/pie-documents/releases"
 
 [tool.poetry.dependencies]
 python = "^3.9"
