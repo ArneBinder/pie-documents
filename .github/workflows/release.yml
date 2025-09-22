@@ -5,6 +5,9 @@ on:
         branches:
             - main
 
+permissions:
+    contents: write       # required to create tags & releases
+
 jobs:
     release:
         name: Release
@@ -13,7 +16,8 @@ jobs:
             - name: Check out the repository
               uses: actions/checkout@v4
               with:
-                  fetch-depth: 2
+                  fetch-depth: 0           # ensure history & tags as needed
+                  # token defaults to GITHUB_TOKEN set above with contents: write
 
             - name: Set up Python
               uses: actions/setup-python@v5
