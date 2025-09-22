@@ -5,7 +5,7 @@ from typing import Any, Dict, TypeVar
 
 from pie_core import AnnotationLayer, Document
 
-from pie_modules.annotations import LabeledMultiSpan, LabeledSpan, Span
+from pie_documents.annotations import LabeledMultiSpan, LabeledSpan, Span
 
 logger = logging.getLogger(__name__)
 

@@ -1,11 +1,11 @@
 import pytest
 
-from pie_modules.annotations import BinaryRelation, LabeledMultiSpan, LabeledSpan
-from pie_modules.document.processing import SpansViaRelationMerger
-from pie_modules.document.processing.merge_spans_via_relation import (
+from pie_documents.annotations import BinaryRelation, LabeledMultiSpan, LabeledSpan
+from pie_documents.document.processing import SpansViaRelationMerger
+from pie_documents.document.processing.merge_spans_via_relation import (
     _merge_spans_via_relation,
 )
-from pie_modules.documents import (
+from pie_documents.documents import (
     TextDocumentWithLabeledMultiSpansAndBinaryRelations,
     TextDocumentWithLabeledMultiSpansBinaryRelationsAndLabeledPartitions,
     TextDocumentWithLabeledSpansAndBinaryRelations,

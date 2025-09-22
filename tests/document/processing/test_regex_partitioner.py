@@ -6,12 +6,12 @@ from typing import Tuple
 import pytest
 from pie_core import AnnotationLayer, annotation_field
 
-from pie_modules.annotations import LabeledSpan
-from pie_modules.document.processing import RegexPartitioner
-from pie_modules.document.processing.regex_partitioner import (
+from pie_documents.annotations import LabeledSpan
+from pie_documents.document.processing import RegexPartitioner
+from pie_documents.document.processing.regex_partitioner import (
     _get_partitions_with_matcher,
 )
-from pie_modules.documents import TextBasedDocument
+from pie_documents.documents import TextBasedDocument
 
 
 @dataclasses.dataclass

@@ -6,9 +6,9 @@ from typing import Dict
 import pytest
 from pie_core import Annotation, AnnotationLayer, annotation_field
 
-from pie_modules.annotations import LabeledSpan
-from pie_modules.documents import TextBasedDocument
-from pie_modules.metrics import ConfusionMatrix
+from pie_documents.annotations import LabeledSpan
+from pie_documents.documents import TextBasedDocument
+from pie_documents.metrics import ConfusionMatrix
 
 
 @pytest.fixture

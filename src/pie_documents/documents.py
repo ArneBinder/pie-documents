@@ -4,7 +4,7 @@ from typing import Any, Dict, Optional, Tuple
 from pie_core import AnnotationLayer, Document, annotation_field
 from typing_extensions import TypeAlias
 
-from pie_modules.annotations import (
+from pie_documents.annotations import (
     AbstractiveSummary,
     BinaryCorefRelation,
     BinaryRelation,

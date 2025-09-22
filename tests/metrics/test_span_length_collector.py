@@ -3,9 +3,9 @@ import dataclasses
 import pytest
 from pie_core import AnnotationLayer, Document, annotation_field
 
-from pie_modules.annotations import Label, LabeledSpan
-from pie_modules.documents import TextBasedDocument, TokenBasedDocument
-from pie_modules.metrics import SpanLengthCollector
+from pie_documents.annotations import Label, LabeledSpan
+from pie_documents.documents import TextBasedDocument, TokenBasedDocument
+from pie_documents.metrics import SpanLengthCollector
 
 
 @pytest.fixture
@@ -92,5 +92,5 @@ def test_span_length_collector_with_wrong_annotation_type():
         statistic(doc)
     assert (
         str(excinfo.value)
-        == "span length calculation is not yet supported for <class 'pie_modules.annotations.Label'>"
+        == "span length calculation is not yet supported for <class 'pie_documents.annotations.Label'>"
     )

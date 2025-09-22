@@ -11,7 +11,7 @@ readme = "README.md"
 homepage = "https://github.com/arnebinder/pie-documents"
 repository = "https://github.com/arnebinder/pie-documents"
 packages = [
-    { include = "pie_modules", from = "src" },
+    { include = "pie_documents", from = "src" },
 ]
 classifiers = [
     "Framework :: Pytest",

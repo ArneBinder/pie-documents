@@ -10,28 +10,28 @@
 
 Annotation-, document- and metric implementations as well as utilities for [Python-IE](https://github.com/ArneBinder/pie-core).
 
-Available annotation types: see [here](src/pie_modules/annotations.py).
+Available annotation types: see [here](src/pie_documents/annotations.py).
 
-Available document types: see [here](src/pie_modules/documents.py).
+Available document types: see [here](src/pie_documents/documents.py).
 
 Available metrics:
 
-- [F1Metric](src/pie_modules/metrics/f1.py)
-- [ConfusionMatrix](src/pie_modules/metrics/confusion_matrix.py)
-- [SpanLengthCollector](src/pie_modules/metrics/span_length_collector.py)
-- [RelationArgumentDistanceCollector](src/pie_modules/metrics/relation_argument_distance_collector.py)
-- [SpanCoverageCollector](src/pie_modules/metrics/span_coverage_collector.py)
-- [SQuADF1](src/pie_modules/metrics/squad_f1.py)
+- [F1Metric](src/pie_documents/metrics/f1.py)
+- [ConfusionMatrix](src/pie_documents/metrics/confusion_matrix.py)
+- [SpanLengthCollector](src/pie_documents/metrics/span_length_collector.py)
+- [RelationArgumentDistanceCollector](src/pie_documents/metrics/relation_argument_distance_collector.py)
+- [SpanCoverageCollector](src/pie_documents/metrics/span_coverage_collector.py)
+- [SQuADF1](src/pie_documents/metrics/squad_f1.py)
 
 Document processing utilities:
 
-- [MultiSpanMerger](src/pie_modules/document/processing/merge_multi_spans.py)
-- [SpansViaRelationMerger](src/pie_modules/document/processing/merge_spans_via_relation.py)
-- [RegexPartitioner](src/pie_modules/document/processing/regex_partitioner.py)
-- [RelationArgumentSorter](src/pie_modules/document/processing/relation_argument_sorter.py)
-- [SentenceSplitter](src/pie_modules/document/processing/sentence_splitter.py)
-- [TextSpanTrimmer](src/pie_modules/document/processing/text_span_trimmer.py)
-- [tokenization utils](src/pie_modules/document/processing/tokenization.py), e.g., `text_based_document_to_token_based` and `token_based_document_to_text_based`
+- [MultiSpanMerger](src/pie_documents/document/processing/merge_multi_spans.py)
+- [SpansViaRelationMerger](src/pie_documents/document/processing/merge_spans_via_relation.py)
+- [RegexPartitioner](src/pie_documents/document/processing/regex_partitioner.py)
+- [RelationArgumentSorter](src/pie_documents/document/processing/relation_argument_sorter.py)
+- [SentenceSplitter](src/pie_documents/document/processing/sentence_splitter.py)
+- [TextSpanTrimmer](src/pie_documents/document/processing/text_span_trimmer.py)
+- [tokenization utils](src/pie_documents/document/processing/tokenization.py), e.g., `text_based_document_to_token_based` and `token_based_document_to_text_based`
 
 ## Setup
 

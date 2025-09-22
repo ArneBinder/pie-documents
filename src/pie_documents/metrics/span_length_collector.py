@@ -4,7 +4,7 @@ from typing import Dict, List, Optional, Union
 
 from pie_core import Document, DocumentStatistic
 
-from pie_modules.annotations import Span
+from pie_documents.annotations import Span
 
 logger = logging.getLogger(__name__)
 

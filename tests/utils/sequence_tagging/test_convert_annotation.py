@@ -4,8 +4,8 @@ from typing import Callable, Dict, Optional
 
 import pytest
 
-from pie_modules.annotations import BinaryRelation, LabeledSpan
-from pie_modules.utils.sequence_tagging.convert_annotation import (
+from pie_documents.annotations import BinaryRelation, LabeledSpan
+from pie_documents.utils.sequence_tagging.convert_annotation import (
     convert_span_annotations_to_tag_sequence,
     convert_tag_sequence_to_span_annotations,
     span_annotations_to_labeled_spans,

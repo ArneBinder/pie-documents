@@ -3,9 +3,9 @@ import dataclasses
 import pytest
 from pie_core import Annotation, AnnotationLayer, annotation_field
 
-from pie_modules.annotations import LabeledMultiSpan, LabeledSpan
-from pie_modules.documents import TextBasedDocument
-from pie_modules.metrics import SpanCoverageCollector
+from pie_documents.annotations import LabeledMultiSpan, LabeledSpan
+from pie_documents.documents import TextBasedDocument
+from pie_documents.metrics import SpanCoverageCollector
 
 
 @dataclasses.dataclass

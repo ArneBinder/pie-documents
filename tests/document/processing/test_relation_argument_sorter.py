@@ -4,18 +4,18 @@ import logging
 import pytest
 from pie_core import Annotation, AnnotationLayer, annotation_field
 
-from pie_modules.annotations import (
+from pie_documents.annotations import (
     BinaryRelation,
     LabeledMultiSpan,
     LabeledSpan,
     NaryRelation,
 )
-from pie_modules.document.processing import RelationArgumentSorter
-from pie_modules.document.processing.relation_argument_sorter import (
+from pie_documents.document.processing import RelationArgumentSorter
+from pie_documents.document.processing.relation_argument_sorter import (
     construct_relation_with_new_args,
     get_relation_args,
 )
-from pie_modules.documents import (
+from pie_documents.documents import (
     TextBasedDocument,
     TextDocumentWithLabeledSpans,
     TextDocumentWithLabeledSpansAndBinaryRelations,
@@ -104,7 +104,7 @@ def test_get_args_wrong_type(document_with_nary_relation):
         == "relation NaryRelation(arguments=(LabeledSpan(start=0, end=8, label='PER', score=1.0), "
         "LabeledSpan(start=18, end=19, label='ORG', score=1.0), LabeledSpan(start=33, end=34, "
         "label='ORG', score=1.0)), roles=('person', 'worksAt', 'founded'), label='event', score=1.0) "
-        "has unknown type [<class 'pie_modules.annotations.NaryRelation'>], cannot get arguments from it"
+        "has unknown type [<class 'pie_documents.annotations.NaryRelation'>], cannot get arguments from it"
     )
 
 
@@ -122,7 +122,7 @@ def test_construct_relation_with_new_args_wrong_type(document_with_nary_relation
         == "original relation NaryRelation(arguments=(LabeledSpan(start=0, end=8, label='PER', score=1.0), "
         "LabeledSpan(start=18, end=19, label='ORG', score=1.0), LabeledSpan(start=33, end=34, label='ORG', "
         "score=1.0)), roles=('person', 'worksAt', 'founded'), label='event', score=1.0) has unknown type "
-        "[<class 'pie_modules.annotations.NaryRelation'>], cannot reconstruct it with new arguments"
+        "[<class 'pie_documents.annotations.NaryRelation'>], cannot reconstruct it with new arguments"
     )
 
 

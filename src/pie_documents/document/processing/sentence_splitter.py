@@ -4,8 +4,8 @@ import logging
 import os
 from typing import TypeVar
 
-from pie_modules.annotations import LabeledSpan
-from pie_modules.documents import TextDocumentWithLabeledPartitions
+from pie_documents.annotations import LabeledSpan
+from pie_documents.documents import TextDocumentWithLabeledPartitions
 
 logger = logging.getLogger(__name__)
 

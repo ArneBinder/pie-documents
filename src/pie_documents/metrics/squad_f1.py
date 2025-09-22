@@ -8,7 +8,7 @@ from typing import Dict, List
 import pandas as pd
 from pie_core import DocumentMetric
 
-from pie_modules.documents import TextDocumentWithQuestionsAndExtractiveAnswers
+from pie_documents.documents import TextDocumentWithQuestionsAndExtractiveAnswers
 
 logger = logging.getLogger(__name__)
 

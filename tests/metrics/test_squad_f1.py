@@ -1,8 +1,8 @@
 import logging
 
-from pie_modules.annotations import ExtractiveAnswer, Question
-from pie_modules.documents import TextDocumentWithQuestionsAndExtractiveAnswers
-from pie_modules.metrics import SQuADF1
+from pie_documents.annotations import ExtractiveAnswer, Question
+from pie_documents.documents import TextDocumentWithQuestionsAndExtractiveAnswers
+from pie_documents.metrics import SQuADF1
 
 
 def test_squad_f1_exact_match(caplog):

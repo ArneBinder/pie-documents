@@ -1,7 +1,7 @@
 import logging
 from typing import Callable, Counter, DefaultDict, Iterable, List, Optional, Tuple
 
-from pie_modules.annotations import LabeledSpan, Span
+from pie_documents.annotations import LabeledSpan, Span
 
 from .encoding import (
     tag_sequence_to_token_spans,

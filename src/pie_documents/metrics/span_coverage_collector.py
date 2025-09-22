@@ -3,7 +3,7 @@ from typing import List, Optional, Set, Union
 
 from pie_core import Document, DocumentStatistic
 
-from pie_modules.annotations import LabeledMultiSpan, Span
+from pie_documents.annotations import LabeledMultiSpan, Span
 
 logger = logging.getLogger(__name__)
 
