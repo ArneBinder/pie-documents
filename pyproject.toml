@@ -35,8 +35,9 @@ pre-commit = "^3.4.0"
 tabulate = "^0.9"
 # for rouge metric (tests only) and for NltkSentenceSplitter
 nltk = "^3.9.1"
-# for NltkSentenceSplitter
+# for FlairSegtokSentenceSplitter
 flair = "^0.13.1"
+torch = {version = ">=1.10.0", source = "pytorch-cpu"}
 # for SpansViaRelationMerger
 networkx = "^3.0.0"
 
@@ -44,7 +45,7 @@ networkx = "^3.0.0"
 optional = true
 
 [[tool.poetry.source]]
-name = "pytorch"
+name = "pytorch-cpu"
 url = "https://download.pytorch.org/whl/cpu"
 priority = "explicit"
 
